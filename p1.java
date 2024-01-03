@@ -2,11 +2,14 @@ import java.util.Scanner;
 
 public class p1 {
     public static void main(String[] args) {
-        System.out.println("enter 2 nos");
         Scanner sc = new Scanner(System.in);
-        int a,b;
-        a = sc.nextInt();
-        b = sc.nextInt();
-        System.out.println(a+b);
+        int[] arr = new int[5];
+        for(int i =0; i< arr.length; i++){
+            System.out.println("enter" + (i+1)+ "no.");
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("this is what you entered");
+        for(int x:arr)
+            System.out.println(x);
     }
 }
